@@ -21,6 +21,12 @@ a. **Current Alternatives**: An alternative is to purchase professional statisti
 b. **Value Proposition**: Cost effective and convenient. It also helps Joe to understand probablility problems better by creating solutinos programmatically, since he would be the maintainer of this program!
 
 4. USER STORIES
-==============
+===============
 As Joe, I would like to use a free, quick and easy to use program to help me with some basic statistics problems such as calculating Confidence Interval for population mean, using Z or T score, where approproate.
 
+5. ACCEPTANCE STORIES
+=====================
+Scenario 1: Using Z Critical Value or T Critical Value Automatically
+Given that I need to calculate the Confidence Interval for the mean of a population, and I don't have any reference table for
+Z and T critical values, when I supply the required parameters, then the program will automatically chose between Z critical
+value ot T critical value based on the size of the sample number (n) and use the appropriate value for alpha.
