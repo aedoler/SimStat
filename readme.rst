@@ -14,7 +14,7 @@ Required module are:
 - argparse
 
 All modules with the exception of scipy and numpy are part of the standard library.
-scipy and numpy can be be install on Ubuntu via:
+scipy and numpy can be installed on Ubuntu via:
 
  apt-get install python-scipy
 
@@ -30,9 +30,9 @@ Option 1)
 
 To obtain the confidence interval for a sample, when the total number of data points, mean
 and standard deviation are known, use the following syntax below. Confidence level is optional
-and defaults to 0.95 (95%) if not specified.
+and defaults to 0.95 (95%), if not specified.
 
- python simstat.py sum [num, std, mean] [conf]
+ python simstat.py sum [num mean std] [conf]
 
 Example:
 
@@ -43,7 +43,7 @@ Example:
 Option 2)
 *********
 
-To obtain the confidence interval for a sample, when the raw sample data is availanle in a
+To obtain the confidence interval for a sample, when the raw sample data is available in a
 csv format, use the following syntax below:
 
  python simstat.py data [data_file] [conf]
