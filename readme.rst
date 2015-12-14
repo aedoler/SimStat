@@ -25,6 +25,7 @@ apt-get install python-numpy
 Simstat.py can be run as follows:
 
 Option 1)
+*********
 
 To obtain the confidence interval for a sample, when the total number of data points, mean
 and standard deviation are known, use the following syntax below. Confidence level is optional
@@ -38,6 +39,7 @@ python simstat.py sum 10 5.4 1.2 0.99
 (4.4225415044376284, 6.3774584955623723)
 
 Option 2)
+*********
 
 To obtain the confidence interval for a sample, when the raw sample data is availanle in a
 csv format, use the following syntax below:
