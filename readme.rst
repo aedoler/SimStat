@@ -44,7 +44,8 @@ Option 2)
 *********
 
 To obtain the confidence interval for a sample, when the raw sample data is available in a
-csv format, use the following syntax below:
+csv format, use the following syntax below. Additionally, other values of interest, such as
+MIN, MAX and variance are also returned.
 
  python simstat.py data [data_file] [conf]
 
