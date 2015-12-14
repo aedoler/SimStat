@@ -67,22 +67,22 @@ def main():
     """This is the main function."""
     parser = argparse.ArgumentParser(description='Simstat Utility')
     subparsers = parser.add_subparsers()
-    parser_foo = subparsers.add_parser('sum')
-    parser_foo.add_argument('num', type=int,
+    parser_sum = subparsers.add_parser('sum')
+    parser_sum.add_argument('num', type=int,
                             help='Number of sample points (int)')
-    parser_foo.add_argument('mean', type=float,
+    parser_sum.add_argument('mean', type=float,
                             help='Sample mean (float)')
-    parser_foo.add_argument('std', type=float,
+    parser_sum.add_argument('std', type=float,
                             help='Sample standard deviation float)')
-    parser_foo.add_argument('conf', type=float, nargs='?', default=0.95,
+    parser_sum.add_argument('conf', type=float, nargs='?', default=0.95,
                             help='Confidence interval (float) 0.01:0.99')
-    parser_foo.set_defaults(func=get_summary)
-    parser_bar = subparsers.add_parser('data')
-    parser_bar.add_argument('datafile',
+    parser_sum.set_defaults(func=get_summary)
+    parser_data = subparsers.add_parser('data')
+    parser_data.add_argument('datafile',
                             help='Name of the csv file containing sample data.')
-    parser_bar.add_argument('conf', type=float, nargs='?', default=0.95,
+    parser_data.add_argument('conf', type=float, nargs='?', default=0.95,
                             help='Optional confidence interval (float) .01:.99')
-    parser_bar.set_defaults(func=get_data)
+    parser_data.set_defaults(func=get_data)
     args = parser.parse_args()
     args.func(args)
 
