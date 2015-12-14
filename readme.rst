@@ -17,6 +17,7 @@ All modules with the exception of scipy and numpy are part of the standard libra
 scipy and numpy can be be install on Ubuntu via:
 
  apt-get install python-scipy
+
  apt-get install python-numpy
 
 2. Running simstat.py
@@ -36,6 +37,7 @@ and defaults to 0.95 (95%) if not specified.
 Example:
 
  python simstat.py sum 10 5.4 1.2 0.99
+
  (4.4225415044376284, 6.3774584955623723)
 
 Option 2)
@@ -49,6 +51,8 @@ csv format, use the following syntax below:
 Example:
 
  python simstat.py data data.txt 0.95
+
  Num: 10, Min: 99.1, Max: 933.3, Mean: 341.9220, Variance: 55918.5200
+
  (195.35846711874191, 488.485532881258)
 
